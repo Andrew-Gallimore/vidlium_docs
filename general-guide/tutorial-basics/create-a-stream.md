@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Create a stream
 
+## Defining a "stream"
+
+A stream is equivalent too a Zoom meeting, which can have multiple rooms/breakout-rooms within it. If, as a director, you wish to only control one room for guests to chat in, you still need to generate a stream and only create one room in it.
+
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
 - `src/pages/index.js` → `localhost:3000/`
