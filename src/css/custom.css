@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&display=swap');
+
 
 /* Light theme */
 :root {
@@ -19,12 +21,13 @@
 
   /* Navbar styling */
   --c-navbar-gradient: linear-gradient(45deg, #EEEEF6 0% 0%, #EEEEF6 68.26% 68.26%, #C4D0F1 100% 100%);
+  --ifm-navbar-link-hover-color: #2857c5;
   --ifm-navbar-background-color: #f8f8ff;
   --ifm-navbar-padding-vertical: 8px;
   --ifm-navbar-padding-horizontal: 16px;
 
   /* Table of Contents */
-  --c-toc-gradient-color: linear-gradient(90deg, #b431cb 0% 0%, #3162d4 100% 100%);
+  --c-toc-gradient-color: linear-gradient(90deg, #b431cb 0% 0%, #3162d4 75% 75%);
   --ifm-toc-padding-vertical: 8px;
   --ifm-toc-padding-horizontal: 8px;
   
@@ -39,6 +42,9 @@
   
   /* General background */
   --ifm-background-color: #fafaff;
+
+  /* Font */
+  --ifm-font-family-base: 'Heebo', sans-serif;
 }
 
 /* Dark theme */
@@ -55,10 +61,11 @@
   
   /* Navbar styling */
   --c-navbar-gradient: linear-gradient(45deg, #252528 0% 0%, #252528 68.26% 68.26%, #293041 100% 100%);
+  --ifm-navbar-link-hover-color: #6a96ff;
   --ifm-navbar-background-color: #252528;
   
   /* Table of Contents */
-  --c-toc-gradient-color: linear-gradient(90deg, #dd59f5 0% 0%, #6a96ff 100% 100%);
+  --c-toc-gradient-color: linear-gradient(90deg, #dd59f5 0% 0%, #6a96ff 80% 80%);
   
   /* Sidebar Styling */
   --ifm-menu-color-active: #E6E6E6;
@@ -107,4 +114,9 @@ As docusaurus notes, this is not a sable way of styling, use the ifm variables p
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+.footer--dark {
+  --ifm-footer-background-color: #252528;
 }

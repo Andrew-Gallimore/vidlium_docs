@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Vidlium Docs',
+  tagline: 'Learn about Vidlium and how developers can use its libraries.',
   favicon: 'img/Logo v2.1 - 64px.png',
 
   // Set the production url of your site here
@@ -98,39 +98,47 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'General Guide',
+                to: '/general-guide',
+              },
+              {
+                label: 'VDOwrapper.js',
+                to: '/vdowrapper',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Pages',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Homepage',
+                href: 'https://vidlium.com',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'Docs (here)',
+                to: '/',
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Docs GitHub',
+                href: 'https://github.com/Andrew-Gallimore/vidlium_docs',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Directors page GitHub',
+                href: 'https://github.com/Andrew-Gallimore/vidlium_director',
               },
+              {
+                label: 'Website GitHub',
+                href: 'https://github.com/Andrew-Gallimore/vidlium_website',
+              },
+              {
+                label: 'Discord in the works...',
+                href: '#',
+              }
             ],
           },
         ],

@@ -3,6 +3,11 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+
+  background: #fafaff;
+}
+[data-theme='dark'] .features {
+  background: #1D1D1F;
 }
 
 .featureSvg {

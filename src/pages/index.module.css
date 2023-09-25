@@ -3,12 +3,44 @@
  * and scoped locally.
  */
 
+
 .heroBanner {
+  position: relative;
   padding: 4rem 0;
   text-align: center;
-  position: relative;
   overflow: hidden;
-  background: blue;
+
+  background: #fafaff;
+  background-image: url(../../static/img/Landing-BG.jpg);
+  background-position: center;
+  background-size: cover;
+
+  color: black;
+}
+[data-theme='dark'] .heroBanner {
+  background-color: #1D1D1F;
+}
+
+.heroBannerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #fafaff14 0%, #fafaff3d 42%, #fafaff7e 80%, #fafaff 100%);
+}
+[data-theme='dark'] .heroBannerOverlay {
+  background: linear-gradient(180deg, #1d1d1f14 0%, #1d1d1f3d 42%, #1d1d1f7e 60%, #1D1D1F 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+[data-theme='dark'] .heroText {
+  /* text-shadow: 0.5px 1px 3px rgba(0, 0, 0, 0.204); */
+  color: white;
 }
 
 @media screen and (max-width: 996px) {
